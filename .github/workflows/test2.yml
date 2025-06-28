@@ -1,0 +1,16 @@
+name: Print Collaborator and Project Name
+
+on:
+  push:
+    branches:
+      - branch        # Change to your target branch if needed (e.g., feature-branch)
+  workflow_dispatch: # Enables manual trigger from GitHub UI
+
+jobs:
+  print-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print collaborator (actor) and project name
+        run: |
+          echo "Collaborator (Actor): ${{ github.actor }}"
+          echo "Project name: ${{ github.repository }}"
