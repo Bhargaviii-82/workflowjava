@@ -1,4 +1,4 @@
-name: Java Hello
+name: Java hello
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
         java-version: '17'
 
     - name: Compile Java program
-      run: javac Hello.java add.java
+      run: javac hello.java add.java
 
     - name: Run Java program
-      run: java Hello
+      run: java hello
