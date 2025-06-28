@@ -26,5 +26,5 @@ jobs:
     - name: Run Java program
       run: java Hello
 
-      - name: Run Java program
+    - name: Run Java program
       run: java add
